@@ -89,7 +89,7 @@ done < <(df -h --output=source,size,used,avail,pcent,target | tail -n +2 | grep 
 }
 
 # --- Services Check ---
-SERVICES=("ssh" "cron")
+SERVICES=("ssh" "cron" "networking")
 
 check_services() {
     for service in "${SERVICES[@]}"; do
